@@ -1,1 +1,1 @@
-# YGZN.md
+# [YGZN.md](./YGZN.md)
