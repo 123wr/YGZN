@@ -1,29 +1,29 @@
- mosquitto 常用命令
+## mosquitto 常用命令
 
-订阅主题
+### 订阅主题
 mosquitto_sub -h 192.168.0.1 -p 1883 -u root -P root -t topicname
-推送消息
+### 推送消息
 mosquitto_pub -h 192.168.0.1 -p 1883 -u root -P root -t topicname -m "发送的消息内容"
-mosquitto重启
+## mosquitto重启
 
-1.1 查看mosquitto的进程
+1 查看mosquitto的进程
 命令：ps -aux | grep mosquitto
 
-1.2 杀掉进程#
+2 杀掉进程#
 命令：kill -9 18248
 
-1.3 启动#
+3 启动#
 命令：mosquitto -c /etc/mosquitto/mosquitto.conf -d
 mosquitto 启动命令
 
-启动命令#
+## 启动命令#
 mosquitto [-c config file] [ -d | --daemon ] [-p port number] [-v]
 
 -c 后面跟的是启动mosquitto可以调整的参数，比如是否开启基本认证，端口是什么，SSL单向和双向的认证配置等等。
 -d 表示MQTT mosquitto将在后台运行。
 -p 代表当前的mosquitto服务实例启动以后，其监听端口号，这个配置的覆盖[-c config file] 指定的配置文件中的端口
 -v 代码调试模式（verbose）可以输出更多的信息
-mosquitto_pub 命令参数说明
+## mosquitto_pub 命令参数说明
 
     -d 打印debug信息
     -f 将指定文件的内容作为发送消息的内容
@@ -43,7 +43,7 @@ mosquitto_pub 命令参数说明
     --will-retain 指定Will消息被当做一个retain消息（即消息被广播后，该消息被保留起来）。该参数需要与--will-topic一起使用
     --will-topic 用户发送Will消息的topic
 
-mosquitto_sub 命令参数说明
+## mosquitto_sub 命令参数说明
 
     -c 设定‘clean session’为无效状态，这样一直保持订阅状态，即便是已经失去连接，如果再次连接仍旧能够接收的断开期间发送的消息。
     -d 打印debug信息
