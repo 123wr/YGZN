@@ -1,6 +1,6 @@
 ### 在Ubuntu安装使用mosquitto
 - sudo apt-get install mosquitto   安装mosqitto
-- sudo apt-get install lib mosquitto-dev  安装mosquitto开发包
+- sudo apt-get install libmosquitto-dev  安装mosquitto开发包
 - sudo apt-get install mosquitto-clients 安装mosquitto客户端
 - sudo service mosquitto status  查询mosquitto是否正确运行
 ### 本机测试
