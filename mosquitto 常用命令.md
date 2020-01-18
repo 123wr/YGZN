@@ -19,10 +19,10 @@ mosquitto 启动命令
 ## 启动命令#
 mosquitto [-c config file] [ -d | --daemon ] [-p port number] [-v]
 
--c 后面跟的是启动mosquitto可以调整的参数，比如是否开启基本认证，端口是什么，SSL单向和双向的认证配置等等。
--d 表示MQTT mosquitto将在后台运行。
--p 代表当前的mosquitto服务实例启动以后，其监听端口号，这个配置的覆盖[-c config file] 指定的配置文件中的端口
--v 代码调试模式（verbose）可以输出更多的信息
+* -c 后面跟的是启动mosquitto可以调整的参数，比如是否开启基本认证，端口是什么，SSL单向和双向的认证配置等等。
+* -d 表示MQTT mosquitto将在后台运行。
+* -p 代表当前的mosquitto服务实例启动以后，其监听端口号，这个配置的覆盖[-c config file] 指定的配置文件中的端口
+* -v 代码调试模式（verbose）可以输出更多的信息
 ## mosquitto_pub 命令参数说明
 
     -d 打印debug信息
